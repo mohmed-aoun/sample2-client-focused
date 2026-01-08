@@ -14,6 +14,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
   background: var(--bg);
@@ -330,4 +334,107 @@ textarea {
   .hero {
     padding: 3.5rem 2rem 4rem;
   }
+}
+
+svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  color: var(--accent);
+}
+
+.proof-card svg,
+.card svg {
+  margin-bottom: 0.4rem;
+}
+
+/* DECISION FLOW */
+.decision-flow {
+  background: white;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 3rem 1.5rem;
+}
+
+.flow-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  text-align: center;
+}
+
+.flow-step h3 {
+  margin-top: 0.8rem;
+}
+
+.flow-step p {
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+/* TESTIMONIALS */
+.testimonials-section .carousel {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonials-section .carousel-track {
+  min-height: 260px;
+}
+
+.testimonials-section .carousel-card {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.testimonials-section .carousel-card.is-active {
+  display: flex;
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+
+.quote {
+  font-size: 1.1rem;
+  color: #374151;
+  max-width: 520px;
+}
+
+.author {
+  font-weight: 600;
+  color: #111827;
+}
+
+.author span {
+  display: block;
+  font-weight: 500;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.carousel-status {
+  font-size: 0.9rem;
+  color: #6b7280;
 }
